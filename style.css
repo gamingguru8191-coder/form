@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #dfe9f3, #ffffff);
+  min-height: 100vh;
+  overflow-y: auto;
+}
+
+/* Container */
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Logo */
+.logo {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.logo h1 {
+  font-size: 25px;
+  color: #0d8ddb;
+  font-weight: 700;
+}
+
+.logo p {
+  color: #666;
+  font-size: 15px;
+}
+
+/* Card */
+.card {
+  width: 800px;
+  max-width: 100%;
+  background: #fff;
+  min-height: 350px;
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  margin: 10px ;
+
+}
+
+/* Left Section */
+.left {
+  width: 45%;
+  background: #f8fbfd;
+}
+
+.left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Right Section */
+.right {
+  width: 55%;
+  background: #eaf3f8;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #222;
+  margin-bottom: 3px;
+}
+
+.right h2 span {
+  color: #0d8ddb;
+}
+
+.right p {
+  text-align: center;
+  color: #666;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #333;
+}
+
+.form-group label i {
+  margin-right: 5px;
+  color: #0d8ddb;
+  font-size: 14px;
+}
+
+/* Inputs */
+input,
+select {
+  width: 100%;
+  padding: 9px 12px;
+  border: 1px solid #d6d6d6;
+  border-radius: 8px;
+  outline: none;
+  font-size: 13px;
+  background: #fff;
+  transition: 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: #0d8ddb;
+  box-shadow: 0 0 6px rgba(13, 141, 219, 0.2);
+}
+
+select {
+  cursor: pointer;
+}
+
+/* Password */
+.password-box {
+  position: relative;
+}
+
+.password-box input {
+  padding-right: 40px;
+}
+
+.password-box i {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #666;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.password-box i:hover {
+  color: #0d8ddb;
+}
+
+/* Checkbox */
+.check {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 8px 0;
+}
+
+.check input {
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+}
+
+.check label {
+  font-size: 13px;
+  color: #444;
+  cursor: pointer;
+}
+
+/* Button */
+.btn {
+  width: 100%;
+  border: none;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #1da1f2, #0d8ddb);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn i {
+  margin-right: 5px;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(13, 141, 219, 0.25);
+}
+
+/* Login Link */
+.extra {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 13px;
+  color: #555;
+}
+
+.extra a {
+  color: #0d8ddb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.extra a:hover {
+  text-decoration: underline;
+}
+
+.extra i {
+  margin-right: 4px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+    max-width: 500px;
+    flex-direction: column;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+
+  .left {
+    height: 220px;
+  }
+
+  .right {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo h1 {
+    font-size: 20px;
+  }
+
+  .logo p {
+    font-size: 11px;
+  }
+
+  .left {
+    height: 180px;
+  }
+
+  .right h2 {
+    font-size: 20px;
+  }
+
+  input,
+  select,
+  .btn {
+    font-size: 12px;
+  }
+
+  .extra {
+    font-size: 11px;
+  }
+}
